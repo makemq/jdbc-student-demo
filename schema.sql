@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS student_db
+  DEFAULT CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE student_db;
+
+CREATE TABLE IF NOT EXISTS student (
+    id INT PRIMARY KEY AUTO_INCREMENT COMMENT '学号',
+    name VARCHAR(50) NOT NULL COMMENT '姓名',
+    age INT NOT NULL COMMENT '年龄',
+    score DOUBLE NOT NULL COMMENT '成绩'
+);
